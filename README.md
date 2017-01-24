@@ -1,6 +1,6 @@
-Php_TinEye Library
+# Php_TinEye Library #
 
-PHP7 library using the TinEye API.
+#### PHP7 library using the TinEye API. ####
 
 This library is loosely based on the Node Javascript version of found at the following: 
 
