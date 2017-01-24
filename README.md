@@ -1,6 +1,7 @@
 # Php_TinEye Library #
 
 #### PHP7 library using the TinEye API. ####
+* Note: This has been written in php7. I will make a branch that uses php 5.6+ shortly..ish.
 
 This library is loosely based on the Node Javascript version of found at the following: 
 
@@ -12,8 +13,6 @@ It also takes some code from the following pastebin's:
 
 http://pastebin.com/YbiHNG27
 http://pastebin.com/84uH0M0R
-
-* Note: This has been written in php7. I will make a branch that uses php 5.6+ shortly.
 
 * Note: The quick instructions below uses the sandbox keys and the meloncat.jpg file which is the only image usable in the sandbox.
  
