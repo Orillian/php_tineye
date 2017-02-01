@@ -49,10 +49,12 @@ $params = [ //optional
 
 $request_response = $TinEye->searchUrl('https://www.tineye.com/images/meloncat.jpg', $params);
 ``` 
-#### Searching using image data #### 
- 
-$imageFile = 'local/path/to/image/file/'. 'meloncat.jpg';
-``` 
+#### Searching using image data ####
+
+```  
+// Get the imageFiles contents as a string 
+$imageFile = file_get_contents('local/path/to/image/file/'. 'meloncat.jpg');
+
 $request_response = $TinEye->searchData($imageFile, $params);
 ```
 * Note: This is written using basic curl. All of it could be just as easily converted to guzzle or some such.
