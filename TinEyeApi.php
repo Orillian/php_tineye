@@ -138,7 +138,7 @@ class TinEyeApi
     /**
      * Perform searches on the TinEye index using image data.
      *
-     * - `data`, image data to use for searching.
+     * - `data`, image data to use for searching. Pass in the "contents" of the image file as a string.
      * - `offset`, offset of results from the start, defaults to 0.
      * - `limit`, number of results to return, defaults to 10.
      * - `sort`, sort results by score, file size (size), or crawl date (crawl_date), defaults to score.
@@ -146,11 +146,11 @@ class TinEyeApi
      *
      * Returns: a TinEye Response object.
      *
-     * @param $data
+     * @param string $data
      * @param array $options
      * @return bool|mixed
      */
-    public function searchData($data, array $options = [])
+    public function searchData(string $data, array $options = [])
     {
         $options = self::searchOptions($options);
         $imageFile = [ 'image.jpg', $data ];
